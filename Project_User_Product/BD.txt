@@ -1,0 +1,19 @@
+﻿CREATE DATABASE TRAB;
+use TRAB;
+
+CREATE TABLE USUARIO
+(
+id_us				int		PRIMARY KEY auto_increment,
+nome_us				varchar(80)	not null,
+login_us			varchar(80)	not null,
+senha_us			varchar(80) not null,
+nivel_us			char(1)		not null
+);
+
+create table produto
+(
+id_prod int primary key AUTO_INCREMENT,
+nom_prod varchar(80) not null,
+qtd_prod int not null,
+prec_prod decimal(10,2) not null
+);
